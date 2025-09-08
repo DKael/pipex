@@ -60,7 +60,30 @@ bash
 
 ---
 
-## 6️⃣ 기술 스택
+## 6️⃣ 동작 영상
+	•	./pipex infile1 "cat" "wc -l" outfile
+	•	./pipex infile1 "grep test" "sort" outfile
+	•	./pipex infile2 "sort" "uniq" outfile
+	•	./pipex infile3 "sort" "cat -e" outfile
+	•	./pipex emptyfile "cat" "wc -l" outfile
+	•	./pipex infile4 "wc -c" "cat" outfile
+
+https://github.com/user-attachments/assets/4c75f968-537e-439b-949f-320cceeb6e2e
+
+	•	./pipex nofile "ls" "wc -l" outfile
+	•	./pipex infile "nosuchcommand" "wc -l" outfile
+	•	./pipex infile "cat" "grep a" "wc -l" outfile
+	•	./pipex infile "tr a-z A-Z" "sort" "uniq" "wc -l" outfile
+	•	./pipex here_doc LIMITER "cat" "wc -l" outfile
+	•	chmod 444 outfile && ./pipex infile "cat" "wc -l" outfile
+	•	./pipex infile "sleep 2" "echo done" outfile
+
+https://github.com/user-attachments/assets/3751a360-ae0b-4ef9-96ea-69210b7fb6e3
+
+
+---
+
+## 7️⃣ 기술 스택
 	•	언어: C
 	•	환경: Unix/Linux
 	•	주요 시스템 콜: open, close, pipe, fork, dup2, execve, wait, perror
