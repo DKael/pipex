@@ -85,6 +85,7 @@ https://github.com/user-attachments/assets/3751a360-ae0b-4ef9-96ea-69210b7fb6e3
 
 ## 7️⃣ 기술 스택
 	•	언어: C
-	•	환경: Unix/Linux
+  	•	운영체제/환경: Unix/Linux
+ 	•	빌드 도구: GNU Make
+ 	•	Coding Conventions: Norminette
 	•	주요 시스템 콜: open, close, pipe, fork, dup2, execve, wait, perror
-	•	빌드 도구: GNU Make
